@@ -17,6 +17,11 @@ export default {
 </script>
 
 <style module lang='css'>
+:root{
+  --base :32px;
+  --base-color:#012345;
+  --base-background: #FCFCFC;
+}
 .layout {
   font-family:
     'Source Sans Pro',
@@ -35,7 +40,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 
-  color: #012345;
+  background: var(--base-background);
+  color: var(--base-color);
   padding: 3%;
 }
 

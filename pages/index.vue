@@ -5,18 +5,18 @@
           <div :class="$style.whatever">Rent <span :class="$style.whateverBlue">whatever</span></div>
           <div :class="$style.addNew"><span>Add new</span></div>
       </div>
-      <div :class="$style.table">
+      <div :class="$style.tableItem">
         <Item v-for="item of items" :key="item.id" @click.native="openItem(item)">
-          <div :class="$style.prevContainer">
-                    <img :class="$style.imgPrev" :src='item.preview' alt="">
-                </div>
+            <div :class="$style.prevContainer">
+                <img :class="$style.imgPrev" :src='item.preview' alt="">
+            </div>
                 <div :class="$style.prevContent">
                     <div :class="$style.prevHead">
                         <div :class="$style.name">{{item.name}}</div>
                             &nbsp;
                         <div :class="$style.nameType">«{{item.type}}»</div>
                     </div>   
-                    <p :class="$style.description">{{item.description}}</p>
+                    <div :class="$style.description">{{item.description}}</div>
                     <div :class="$style.rent">{{item.rent}} $/h</div>
                 </div>
         </Item>
@@ -31,21 +31,22 @@ import Item from '@/components/Item'
 import DataItems from '@/static/data.json'
 
 export default {
+    async asyncData(){
+      const items = DataItems
+      return {items}
+    },
     data:()=>({
         items:[]
     }),
-    mounted(){
-        this.items = DataItems
-    },
     methods:{
       openItem(item){
-        console.log(item)
+       this.$router.push('/view/' + item.id)
       }
     }   
 }
 </script>
 
-<style module lang='css' scoped>
+<style module lang='css' >
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -53,9 +54,10 @@ export default {
   justify-content: center;
   text-align: center;
 }
-  .table{
+  .tableItem{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(373px, 1fr));
     grid-gap: 32px;
   }
   .head{
@@ -87,5 +89,19 @@ export default {
   .prevHead{
     display: flex;
     font-weight: bold;
+  }
+  .prevContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+  .description{
+    font-size: 12px;
+    color: #677B8F;
+  }
+  .nameType::first-letter{
+    text-transform: uppercase;
   }
 </style>
