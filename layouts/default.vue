@@ -52,4 +52,9 @@ export default {
   box-sizing: border-box;
   margin: 0;
 }
+@media (max-width: 1100px) {
+  .layout{
+    padding:0;
+  }
+}
 </style>

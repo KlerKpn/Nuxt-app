@@ -108,4 +108,7 @@ export default {
     font-weight: bold;
     color: #F84AB3;
   }
+  @media (max-width: 1100px) {
+    
+  }
 </style>
