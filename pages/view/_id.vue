@@ -66,6 +66,21 @@ export default {
         margin-left: 65px;
     }
 
-
+    @media (max-width: 1100px) {
+        .container{
+            padding: 0 16px;
+            flex-direction: column;
+            height: calc(100vh + 100px);
+        }
+        .info{
+          margin: 0;
+          margin-top: 22px;
+          width: 100%;
+        }
+        .nameContainer{
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+     }
 
 </style>

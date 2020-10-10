@@ -77,4 +77,24 @@
     .text{
         margin-left: 24px;
     }
+    @media (max-width: 1100px) {
+        .Features{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .title{
+            font-size: 20px;
+        }
+        .FeaturesImg{
+            min-width:64px ;
+            max-width: 64px;    
+            height:80px;
+            
+        }
+        .FeaturesName{
+            margin-bottom: 4px;
+            
+        }
+    }
+
 </style>

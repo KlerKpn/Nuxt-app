@@ -1,4 +1,5 @@
 <template>
+<div :class="$style.mobile">
     <div :class="$style.main">
         <div :class="$style.row">
             <div :class="$style.row">
@@ -14,6 +15,7 @@
             </button>
         </div>
     </div>
+ </div>   
 </template>
 
 <script>
@@ -56,6 +58,27 @@ export default {
         color: #FCFCFC;
         font-weight: bold;
         cursor: pointer;
+    }
+    @media (max-width: 1100px) {
+        .row{
+            font-size: 16px;
+        }
+        .btn{
+            padding: 16px 24px;
+        }
+        .main{
+            height: 68px;
+            padding: 12px 24px;
+        }
+         .mobile{
+            background: #FCFCFC;
+            padding: 8px 16px  32px  16px;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+                    
+        }
     }
     
 </style>
