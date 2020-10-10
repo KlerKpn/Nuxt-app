@@ -43,6 +43,7 @@ export default {
   background: var(--base-background);
   color: var(--base-color);
   padding: 3%;
+  max-width: 1920px;
 }
 
 *,

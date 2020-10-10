@@ -52,7 +52,6 @@ export default {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  text-align: center;
 }
   .tableItem{
     width: 100%;
@@ -103,5 +102,10 @@ export default {
   }
   .nameType::first-letter{
     text-transform: uppercase;
+  }
+  .rent{
+    font-size: 14px;
+    font-weight: bold;
+    color: #F84AB3;
   }
 </style>

@@ -6,14 +6,21 @@
                     &nbsp;
                 <div :class="$style.rent">
                     <slot /> $/h
-                    </div>
+                </div>
             </div>
+            
             <button :class="$style.btn">
                 Rent now
             </button>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+ 
+}
+</script>
 
 <style module lang="css" scoped>
     .main{
@@ -50,4 +57,5 @@
         font-weight: bold;
         cursor: pointer;
     }
+    
 </style>

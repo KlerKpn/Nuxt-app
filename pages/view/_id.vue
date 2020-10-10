@@ -12,7 +12,8 @@
                 </div>
 
                 <div>
-
+                    
+                    
                 </div>
 
                 <Features />
@@ -33,7 +34,6 @@ import DataItems from '@/static/data.json'
 export default {
     async asyncData({params}){
     const items = await DataItems.filter(el => el.id === params.id)
-    console.log(items);
     return {items}
     }
 }
@@ -43,12 +43,11 @@ export default {
   
     .image{
         width: 100%;
+        height: auto;
         border-radius: 24px;
     }
     .container{
         display: flex;
-        
-        /* justify-content: space-between; */
     }
     .nameContainer{
         display: flex;
@@ -60,7 +59,7 @@ export default {
         text-transform: uppercase;
     }
     .info{
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
