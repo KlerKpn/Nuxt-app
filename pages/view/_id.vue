@@ -59,7 +59,7 @@ export default {
         text-transform: uppercase;
     }
     .info{
-        width: 50%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;

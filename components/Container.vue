@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;  
     background:#F3F4F7;
-    padding: 3%;
+    padding: 4%;
     border-radius: 48px;
     margin: 0 auto;
     min-height: 708px;

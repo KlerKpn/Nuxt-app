@@ -76,11 +76,7 @@ export default {
       color: #4959FF;
       font-size: 20px;
     }
-  .table{
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-  }
-
+    
   .imgPrev{
     border-radius: 24px;
     height: 88px;
@@ -109,6 +105,15 @@ export default {
     color: #F84AB3;
   }
   @media (max-width: 1100px) {
-    
+    .tableItem{
+      grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+      grid-gap: 12px;
+    }
+    .prevContent{
+      margin-left: 20px;
+    }
+    .whatever{
+      font-size: 24px;
+    }
   }
 </style>

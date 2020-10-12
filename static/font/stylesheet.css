@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Codec Pro Fat';
+    src: url('CodecPro-FatItalic.eot');
+    src: local('Codec Pro Fat Italic'), local('CodecPro-FatItalic'),
+        url('CodecPro-FatItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-FatItalic.woff2') format('woff2'),
+        url('CodecPro-FatItalic.woff') format('woff'),
+        url('CodecPro-FatItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-ThinItalic.eot');
+    src: local('Codec Pro Thin Italic'), local('CodecPro-ThinItalic'),
+        url('CodecPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-ThinItalic.woff2') format('woff2'),
+        url('CodecPro-ThinItalic.woff') format('woff'),
+        url('CodecPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro Fat';
+    src: url('CodecPro-Fat.eot');
+    src: local('Codec Pro Fat'), local('CodecPro-Fat'),
+        url('CodecPro-Fat.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Fat.woff2') format('woff2'),
+        url('CodecPro-Fat.woff') format('woff'),
+        url('CodecPro-Fat.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-ExtraBoldItalic.eot');
+    src: local('Codec Pro ExtraBold Italic'), local('CodecPro-ExtraBoldItalic'),
+        url('CodecPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-ExtraBoldItalic.woff2') format('woff2'),
+        url('CodecPro-ExtraBoldItalic.woff') format('woff'),
+        url('CodecPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-BoldItalic.eot');
+    src: local('Codec Pro Bold Italic'), local('CodecPro-BoldItalic'),
+        url('CodecPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-BoldItalic.woff2') format('woff2'),
+        url('CodecPro-BoldItalic.woff') format('woff'),
+        url('CodecPro-BoldItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro News';
+    src: url('CodecPro-News.eot');
+    src: local('Codec Pro News'), local('CodecPro-News'),
+        url('CodecPro-News.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-News.woff2') format('woff2'),
+        url('CodecPro-News.woff') format('woff'),
+        url('CodecPro-News.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-Heavy.eot');
+    src: local('Codec Pro Heavy'), local('CodecPro-Heavy'),
+        url('CodecPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Heavy.woff2') format('woff2'),
+        url('CodecPro-Heavy.woff') format('woff'),
+        url('CodecPro-Heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-Thin.eot');
+    src: local('Codec Pro Thin'), local('CodecPro-Thin'),
+        url('CodecPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Thin.woff2') format('woff2'),
+        url('CodecPro-Thin.woff') format('woff'),
+        url('CodecPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro Ultra';
+    src: url('CodecPro-UltraItalic.eot');
+    src: local('Codec Pro Ultra Italic'), local('CodecPro-UltraItalic'),
+        url('CodecPro-UltraItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-UltraItalic.woff2') format('woff2'),
+        url('CodecPro-UltraItalic.woff') format('woff'),
+        url('CodecPro-UltraItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-HeavyItalic.eot');
+    src: local('Codec Pro Heavy Italic'), local('CodecPro-HeavyItalic'),
+        url('CodecPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-HeavyItalic.woff2') format('woff2'),
+        url('CodecPro-HeavyItalic.woff') format('woff'),
+        url('CodecPro-HeavyItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-Bold.eot');
+    src: local('Codec Pro Bold'), local('CodecPro-Bold'),
+        url('CodecPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Bold.woff2') format('woff2'),
+        url('CodecPro-Bold.woff') format('woff'),
+        url('CodecPro-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro News';
+    src: url('CodecPro-NewsItalic.eot');
+    src: local('Codec Pro News Italic'), local('CodecPro-NewsItalic'),
+        url('CodecPro-NewsItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-NewsItalic.woff2') format('woff2'),
+        url('CodecPro-NewsItalic.woff') format('woff'),
+        url('CodecPro-NewsItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-Light.eot');
+    src: local('Codec Pro Light'), local('CodecPro-Light'),
+        url('CodecPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Light.woff2') format('woff2'),
+        url('CodecPro-Light.woff') format('woff'),
+        url('CodecPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-ExtraBold.eot');
+    src: local('Codec Pro ExtraBold'), local('CodecPro-ExtraBold'),
+        url('CodecPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-ExtraBold.woff2') format('woff2'),
+        url('CodecPro-ExtraBold.woff') format('woff'),
+        url('CodecPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro Ultra';
+    src: url('CodecPro-Ultra.eot');
+    src: local('Codec Pro Ultra'), local('CodecPro-Ultra'),
+        url('CodecPro-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-Ultra.woff2') format('woff2'),
+        url('CodecPro-Ultra.woff') format('woff'),
+        url('CodecPro-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro UltraBlack';
+    src: url('CodecPro-UltraBlackItalic.eot');
+    src: local('Codec Pro UltraBlack Italic'), local('CodecPro-UltraBlackItalic'),
+        url('CodecPro-UltraBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-UltraBlackItalic.woff2') format('woff2'),
+        url('CodecPro-UltraBlackItalic.woff') format('woff'),
+        url('CodecPro-UltraBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro UltraBlack';
+    src: url('CodecPro-UltraBlack.eot');
+    src: local('Codec Pro UltraBlack'), local('CodecPro-UltraBlack'),
+        url('CodecPro-UltraBlack.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-UltraBlack.woff2') format('woff2'),
+        url('CodecPro-UltraBlack.woff') format('woff'),
+        url('CodecPro-UltraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-ExtraLightItalic.eot');
+    src: local('Codec Pro ExtraLight Italic'), local('CodecPro-ExtraLightItalic'),
+        url('CodecPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-ExtraLightItalic.woff2') format('woff2'),
+        url('CodecPro-ExtraLightItalic.woff') format('woff'),
+        url('CodecPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('CodecPro-LightItalic.eot');
+    src: local('Codec Pro Light Italic'), local('CodecPro-LightItalic'),
+        url('CodecPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CodecPro-LightItalic.woff2') format('woff2'),
+        url('CodecPro-LightItalic.woff') format('woff'),
+        url('CodecPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
