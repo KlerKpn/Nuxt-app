@@ -18,6 +18,7 @@
         .item{
             padding: 20px 20px; 
             height: 151px;
+            border-radius: 24px;
         }
     }
     

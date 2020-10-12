@@ -173,8 +173,6 @@ export default {
            height: auto;
        }
        .header{
-           /* padding-top: 12px;
-           padding-bottom: 12px; */
            padding:  20px 12px;
        }
        .container{

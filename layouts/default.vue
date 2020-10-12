@@ -23,6 +23,7 @@ export default {
   --base-background: #FCFCFC;
   --base-table: #F3F4F7;
   --base-descColor:#677B8F;
+  --blue: #4959FF;
 }
 .darkmode{
   --base-color:#FCFCFC;

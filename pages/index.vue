@@ -2,8 +2,21 @@
   <div :class="$style.container">
     <Container>
       <div :class="$style.head">
-          <div :class="$style.whatever">Rent <span :class="$style.whateverBlue">whatever</span></div>
-          <div :class="$style.addNew"><span>Add new</span></div>
+          <div :class="$style.whatever">Rent<span :class="$style.whateverBlue">whatever</span>
+            <div :class="$style.arrDown">
+              <svg :class="$style.svgArrDown" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 8L0 1.99965L2.00094 0L6 4.00071L9.99906 0L12 1.99965L6 8Z" fill="#4959FF"/>
+              </svg>
+            </div>
+          </div>
+          <div :class="$style.addNew">
+            <div>Add new</div>
+            <div :class="$style.divPlus">
+                <svg :class="$style.svgPlus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 6V0H8V6H14V8H8V14H6V8H0V6H6Z" fill="#FCFCFC"/>
+                </svg>
+            </div>
+          </div>
       </div>
       <div :class="$style.tableItem">
         <Item v-for="item of items" :key="item.id" @click.native="openItem(item)">
@@ -35,9 +48,6 @@ export default {
       const items = DataItems
       return {items}
     },
-    data:()=>({
-        items:[]
-    }),
     methods:{
       openItem(item){
        this.$router.push('/view/' + item.id)
@@ -63,20 +73,45 @@ export default {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0 0 5% 0;
+    align-items: center;
+    padding: 55px 0 55px 0;
     font-weight: bold;
   }
+  .divPlus{
+    background: #4959FF;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26px;
+  }
     .whatever{
-      font-size: 48px;
+      font-size: 40px;
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
       .whateverBlue{
+        height: 100%;
+        display: flex;
+        align-items: center;
         color: #4959FF;
+        margin-left: 12px;
       }
     .addNew{
       color: #4959FF;
       font-size: 20px;
+      display: flex;
+      align-items: center;
     }
-    
+    .arrDown{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+    }  
   .imgPrev{
     border-radius: 24px;
     height: 88px;
@@ -87,7 +122,7 @@ export default {
   }
   .prevContent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
     margin-left: 32px;
@@ -106,7 +141,7 @@ export default {
   }
   @media (max-width: 1100px) {
     .tableItem{
-      grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
       grid-gap: 12px;
     }
     .prevContent{
@@ -114,6 +149,38 @@ export default {
     }
     .whatever{
       font-size: 24px;
+    }
+    .head{
+      padding-top:24px;
+      padding-bottom:24px;
+    }
+    .addNew{
+      font-size: 16px;
+    }
+    .imgPrev{
+      height: 88px;
+      width: auto;
+      border-radius: 16px;
+    }
+    .divPlus{
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-left: 12px;
+    }
+    .svgPlus{
+      height: 11.67px;
+      width: 11.67px;
+    }
+    .svgArrDown{
+      height: 5px;
+      width: 8px;
+    }
+    .arrDown{
+      margin-left: 8px;
+    } 
+    .whateverBlue{
+        margin-left: 6px;
     }
   }
 </style>

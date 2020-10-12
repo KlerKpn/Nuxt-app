@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Container>
+        <Container :class="$style.container">
             <div :class="$style.errContainer">
                 <div :class="$style.err">An error has occurred</div>
                 <div :class="$style.description">Please refresh the page</div>
@@ -16,6 +16,9 @@ export default {}
 </script>
 
 <style module lang="css" scoped>
+    .container{
+        padding: 4px;
+    }
     .errContainer{
         display: flex;
         flex-direction: column;
