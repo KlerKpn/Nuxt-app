@@ -11,12 +11,33 @@
                     <div :class="$style.nameType">«{{item.type}}»</div>
                 </div>
 
-                <div>
-                    
-                    
+                <div :class="$style.tabs">
+                    <nav :class="$style.nav">
+                        <div :class="$style.navItem" id='1' @click.prevent="openTab($event)" style='color:#4959FF;'>
+                            Specifications
+                        </div>
+                        <div :class="$style.navItem" id='2' @click.prevent="openTab($event)">
+                            Team
+                        </div>
+                        <div :class="$style.navItem" id='3' @click.prevent="openTab($event)">
+                            Rent terms
+                        </div>
+                    </nav>
+
+                    <div>
+                        <label v-show='true' for="1">
+                            <Features />
+                        </label>
+                        <label v-show='false' for="2">
+                            <Team />
+                        </label>
+                        <label v-show='false' for="3">
+                            <RentTerms />
+                        </label>
+                    </div>
                 </div>
 
-                <Features />
+                
 
                 <Rent>
                     {{item.rent}}
@@ -30,17 +51,48 @@
 <script>
 import Rent from '@/components/Rent'
 import Features from '@/components/Features'
+import Team from '@/components/Team'
+import RentTerms from '@/components/RentTerms'
 import DataItems from '@/static/data.json'
 export default {
     async asyncData({params}){
     const items = await DataItems.filter(el => el.id === params.id)
-    return {items}
+        if(items.length > 1){
+            throw new Error('items more than 1')
+        } else {
+            return {items}
+        }
+        
+    },
+
+    methods: {
+        openTab: (event)=> {
+            const id = event.target.id
+            let lbls = document.getElementsByTagName('label')
+            lbls.forEach(( el, index)=> {
+                document.getElementsByTagName('label')[index].setAttribute('style', 'display:none;')
+                document.getElementById(index+ 1).removeAttribute('style')
+            })
+            document.getElementsByTagName('label')[id-1].setAttribute('style', 'display:inline-block;')
+            event.target.setAttribute('style', 'color:#4959FF;')
+        }
     }
 }
 </script>
 
 <style module lang="css" scoped>
-  
+    .tabs{
+        margin-bottom:0;
+    }
+    .nav{
+        display: flex;
+        font-weight: bold;
+        margin-bottom: var(--base);
+        justify-content: space-between;
+    }
+    .navItem{
+        cursor: pointer;
+    }
     .image{
         width: 100%;
         height: auto;
@@ -62,7 +114,7 @@ export default {
         width: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: 65px;
     }
 
@@ -70,7 +122,7 @@ export default {
         .container{
             padding: 0 16px;
             flex-direction: column;
-            height: calc(100vh + 100px);
+            height: calc(100vh + 500px);
         }
         .info{
           margin: 0;
