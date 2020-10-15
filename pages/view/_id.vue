@@ -37,8 +37,6 @@
                     </div>
                 </div>
 
-                
-
                 <Rent>
                     {{item.rent}}
                 </Rent>
@@ -88,10 +86,10 @@ export default {
         display: flex;
         font-weight: bold;
         margin-bottom: var(--base);
-        justify-content: space-between;
     }
     .navItem{
         cursor: pointer;
+        margin-right: var(--base);
     }
     .image{
         width: 100%;
@@ -115,6 +113,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin-top: 65px;
         margin-left: 65px;
     }
 
@@ -122,7 +121,7 @@ export default {
         .container{
             padding: 0 16px;
             flex-direction: column;
-            height: calc(100vh + 500px);
+            height: calc(100vh + 200px);
         }
         .info{
           margin: 0;

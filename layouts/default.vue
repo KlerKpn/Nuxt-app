@@ -63,6 +63,9 @@ export default {
   margin: 0;
 }
 @media (max-width: 1100px) {
+  :root{
+  --base :16px;
+  }
   .layout{
     padding:0;
   }
