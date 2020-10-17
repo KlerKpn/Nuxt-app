@@ -119,6 +119,7 @@ export default {
   .prevHead{
     display: flex;
     font-weight: bold;
+    font-size: 1rem;
   }
   .prevContent{
     display: flex;
@@ -141,7 +142,7 @@ export default {
   }
   @media (max-width: 1100px) {
     .tableItem{
-      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
       grid-gap: 12px;
     }
     .prevContent{
@@ -181,6 +182,9 @@ export default {
     } 
     .whateverBlue{
         margin-left: 6px;
-    }
+    } 
+    .prevHead{
+      flex-wrap: wrap;
+  }
   }
 </style>

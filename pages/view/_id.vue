@@ -121,7 +121,7 @@ export default {
         .container{
             padding: 0 16px;
             flex-direction: column;
-            height: calc(100vh + 200px);
+            height: calc(100vh + 400px);
         }
         .info{
           margin: 0;

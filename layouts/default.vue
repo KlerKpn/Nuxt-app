@@ -54,6 +54,7 @@ export default {
   padding: 4%;
   padding-top: 0;
   max-width: 1920px;
+  user-select: none;
 }
 
 *,
@@ -68,6 +69,7 @@ export default {
   }
   .layout{
     padding:0;
+    font-size: 14px;
   }
 }
 </style>
